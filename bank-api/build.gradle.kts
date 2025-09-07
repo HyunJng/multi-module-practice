@@ -6,6 +6,8 @@ plugins {
 
 dependencies {
     implementation(project(":bank-core"))
+    implementation(project(":bank-domain"))
+    implementation(project(":bank-event"))
 
     // spring
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -14,5 +16,5 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
 
     // log
-    implementation("ch.qos.logback:logback-classic:1.4.14")
+    implementation("ch.qos.logback:logback-classic")
 }
