@@ -5,6 +5,8 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":bank-core"))
+
     // spring
     implementation("org.springframework.boot:spring-boot-starter-web")
 
